@@ -11,7 +11,7 @@ from functions import get_andijon_weather
 schedule = Scheduler()
 
 
-schedule.daily(dt.time(hour=11, minute=37), get_andijon_weather)
+schedule.daily(dt.time(hour=5, minute=0), get_andijon_weather)
 print(schedule)
 
 
