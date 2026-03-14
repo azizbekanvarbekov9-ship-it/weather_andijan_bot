@@ -42,8 +42,8 @@ async def get_owm_weather(lat: str, lon: str):
 def format_owm_forecast(data):
     """OpenWeatherMap API dan olingan ma'lumotlarni formatlaydi."""
     msg = "Salom hammaga"
-    "\n\n🌤 Andijon viloyati 3 kunlik ob-havo ma'lumotlari\n\n"
-    msg += f"📍 Oqdaryo tumani\n\n"
+    "\n\n🌤 Baliqchi tumanining 3 kunlik ob-havo ma'lumotlari\n\n"
+    msg += f"📍 Baliqchi tumanining ob-havosi\n\n"
 
     today = datetime.now().date()
     days_name = ["Bugun", "Ertaga", "Indinga"]
@@ -75,8 +75,8 @@ def format_owm_forecast(data):
 
 def get_andijon_weather():
     """Andijon viloyati ob-havo ma'lumotlarini olish va konsolga chiqarish."""
-    lat = 40.7450
-    lon = 72.3500
+    lat = 40.9002
+    lon = 71.8414
 
 
     data = asyncio.run(get_owm_weather(lat, lon))
