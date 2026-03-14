@@ -1,7 +1,6 @@
 deploy:
 	@echo "Deploying the bot..."
-	sudo systemctl stop weather_andijan_bot.service
-	sudo cp weather_andijan_bot.service /etc/systemd/system/
+	sudo cp -r ./weather_andijan_bot.service /etc/systemd/system/
 	sudo systemctl daemon-reload
 	sudo systemctl start weather_andijan_bot.service
 	sudo systemctl enable weather_andijan_bot.service
