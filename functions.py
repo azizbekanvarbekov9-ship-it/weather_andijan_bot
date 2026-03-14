@@ -8,11 +8,12 @@ from datetime import datetime, timedelta
 import aiohttp
 import telebot
 
+from config import TOKEN
 
 API_KEY = "79c120c481aac4f0c994f4bc121b5cc8"
 
 
-telebot = telebot.TeleBot("6261639033:AAHibS6ECMdwR2bqPCpCY_9dNJ2iE9kLDIU")
+telebot = telebot.TeleBot(TOKEN)
 
 
 def weather_text(condition: str) -> str:
